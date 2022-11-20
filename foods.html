@@ -1,0 +1,333 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWIGGY Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="search.js"></script>
+</head>
+<div class="head">
+<body class="m-4">
+    <div class="topheader">
+        <div class="location">
+            <div class="topheader">
+                <span class="material-symbols-outlined">near_me</span>
+                <h4>&nbsp;Moolapalayam<span class="material-symbols-outlined">expand_more</span></h4>
+              
+            </div>
+          
+           <p>Solar pirivu, Erode, Tamilnadu 638002.</p>
+        
+        </div>
+        <div class="profile">
+        <a href="">   <span class="material-symbols-outlined">account_circle</span></a> 
+        </div>
+    </div>
+
+    <div class="search">
+        
+        <input type="text" class="searchbar" placeholder="Search for restaurant, item or more" onkeyup="search()">
+         <span class="material-symbols-outlined" id="searchIcon">search</span>
+    </div>
+</div>
+
+
+    <div class="orderList">
+        <div class="foodList scrollHide">
+            <ul>
+                <li>
+                    <div class="foodDet">
+                        <span class="listspan">
+                            <img src="images/item1.png" class="rounded" alt="" srcset="">
+                        </span>
+                        <p class="itemname">Idli</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="0" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="0" class="addItemCart">+</button>
+                    </div>
+                    
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                         <img src="images/item2.png" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Dosa</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="1" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="1" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                         <img src="images/item3.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Rotti</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="2" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="2" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                         <img src="images/item4.png" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Poori</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="3" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="3" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                         <img src="images/item5.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Briyani</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="4" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="4" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                         <img src="images/item6.png" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Curd Rice</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="5" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="5" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                         <img src="images/item7.png" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Lemon</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="6" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="6" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                         <img src="images/item8.png" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Egg Rice</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="7" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="7" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                         <img src="images/item9.png" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Paani Puri</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="8" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="8" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                        <img src="images/alo gobi.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Aloo gobi</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="9" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="9" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                        <img src="images/pexels-muhammad-khawar-nazir-9287039.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Chana masala</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="10" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="10" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                        <img src="images/pexels-dana-tentis-262959.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Fish curry</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="11" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="11" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                        <img src="images/kabab.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Kebab</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="12" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="12" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                        <img src="images/appam.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Appam</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="13" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="13" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                        <img src="images/pexels-antony-trivet-13354485.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Upma</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="14" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="14" class="addItemCart">+</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodDet">
+                    <span class="listspan">
+                        <img src="images/istockphoto-1319788114-612x612.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Pongal</p>
+                    </div>
+                    <div class="cartOpt">
+                        <button type="button" data-id="15" class="removeItemCart">-</button>
+                        <span>0</span>
+                        <button type="button" data-id="15" class="addItemCart">+</button>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="filters scrollHide">
+        <ul>
+            <li>
+                <span>Filter</span>
+                <span>+</span>
+            </li>
+            <li>
+                <span>Sort by</span>
+                <span>></span>
+            </li>
+            <li>
+                <span>Fast Delivery</span>
+            </li>
+            <li>
+                <span>Pure Veg</span>
+            </li>
+            <li>
+                <span>Ratings 4.0 +</span>
+            </li>
+            <li>
+                <span>Offers</span>
+            </li>
+            <li>
+                <span>Cuisines</span>
+                <span>></span>
+            </li>
+            <li>
+                <span>Rs. 300-Rs. 600</span>
+            </li>
+            <li>
+                <span>Less than Rs. 300</span>
+            </li>
+        </ul>
+        <br>
+    </div>
+    <!--footer-->
+    <hr>
+    <div class="cartDiv">
+        <div class="cartOrder">
+            <h4>No Items to procced</h4>
+        </div>
+        <div>
+            <button type="button">Proceed to pay</button>
+        </div>
+    </div>
+    <div class="footer">
+
+    
+ 
+   <span class="material-symbols-outlined">
+        near_me
+       <a href=""> <h6>Near me</h6></a>
+    </span>
+       
+    <br>
+    <span class="material-symbols-outlined" id="cartShow">
+        shopping_cart
+      <a href=""><h6>Cart</h6></a>  
+    </span>
+        <br>
+    <span class="material-symbols-outlined">
+            person
+        <a href="">   <h6>Profile</h6></a> 
+    </span>
+            <br>
+    <span class="material-symbols-outlined">
+                language
+              <a href="">  <h6>Language</h6></a>
+    </span>
+    </div>
+</body>
+
+
+<script src="cart.js"></script>
+</html>

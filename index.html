@@ -1,0 +1,451 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWIGGY Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="search.js"></script>
+
+</head>
+<div class="head">
+<body class="m-4">
+    <div class="topheader">
+        <div class="location">
+            <div class="topheader">
+                <span class="material-symbols-outlined">near_me</span>
+                <h4>&nbsp;Moolapalayam<span class="material-symbols-outlined">expand_more</span></h4>
+              
+            </div>
+          
+           <p>Solar pirivu, Erode, Tamilnadu 638002.</p>
+        
+        </div>
+        <div class="profile">
+        <a href="">   <span class="material-symbols-outlined">account_circle</span></a> 
+        </div>
+    </div>
+
+    <div class="search">
+        
+        <input type="text" class="searchbar" placeholder="Search for restaurant, item or more" onkeyup="search()">
+         <span class="material-symbols-outlined" id="searchIcon">search</span>
+    </div>
+</div>
+    <div class="offerzone">
+        <span class="offerLogo">%</span>
+        <div class="offername">
+            <h4>Get big savings with Offer Zone</h4>
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+        </div>
+    </div>
+    <div class="offercard">
+        <div class="offercardText">
+            <h3>50% OFF & <br> get free delivery</h3>
+            <span>Use Coupon:</span>
+            <h4>WELCOME50</h4>
+        </div>
+        <div class="viewMore">
+            <span class="material-symbols-outlined">arrow_right_alt</span>
+        </div>
+    </div>
+
+    <div class="orderList">
+        <div class="getQuote">
+            <h4>Get it quickly</h4>
+        </div>
+        <div class="itemList getItem scrollHide">
+            <div class="product-list" id="product-list">
+            <ul>
+                <li>
+                    <span class="listspan">
+                        <img src="shop1.png" class="square" alt="" srcset="">
+                    </span>
+                    <p>Biryani Palayam</p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">4.1</span>
+                            <span class="dot">.</span>
+                            <span class="time">3.5 mins</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/pexels-pixabay-315755.jpg" class="square" alt="" srcset="">
+                    </span>
+                    <p>DOMINOS</p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">4.1</span>
+                            <span class="dot">.</span>
+                            <span class="time">7.5 mins</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/pexels-rajesh-tp-1624487.jpg" class="square" alt="" srcset="">
+                    </span>
+                    <p>A.M Biriyani</p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">6.8</span>
+                            <span class="dot">.</span>
+                            <span class="time">5.0 mins</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/pexels-cree-payton-9751156.jpg" class="square" alt="" srcset="">
+                    </span>
+                    <p>Chimini</p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">6.8</span>
+                            <span class="dot">.</span>
+                            <span class="time">5.0 mins</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                   
+                    <span class="listspan">
+                        <img src="images/shop2.jpg" class="square" alt="" srcset="">
+                    </span>
+                    <p>Hotel Sivasakthi</p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">4.1</span>
+                            <span class="dot">.</span>
+                            <span class="time">3.5 mins</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/saktheeswaran-govindarajan-yCIcDyKm440-unsplash.jpg" class="square" alt="" srcset="">
+                    </span>
+                    <p>Anjappar</p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">6.8</span>
+                            <span class="dot">.</span>
+                            <span class="time">10 mins</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/radowan-nakif-rehan-gU6_KA8zCvM-unsplash.jpg" class="square" alt="" srcset="">
+                    </span>
+                    <p>Junior kuppanna</p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">5.4</span>
+                            <span class="dot">.</span>
+                            <span class="time">8 mins</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/mae-mu-H5Hj8QV2Tx4-unsplash.jpg" class="square" alt="" srcset="">
+                    </span>
+                    <p>Aruvi Restaurant </p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">4.7</span>
+                            <span class="dot">.</span>
+                            <span class="time">20 mins</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/lior-shapira-GKxsKNTfZd8-unsplash.jpg" class="square" alt="" srcset="">
+                    </span>
+                    <p>Drive-Inn Restaurant</p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">3.83</span>
+                            <span class="dot">.</span>
+                            <span class="time">15 mins</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/charlesdeluvio-PqsImnjuElM-unsplash.jpg" class="square" alt="" srcset="">
+                    </span>
+                    <p>Marinaa Restaurant</p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">7.9</span>
+                            <span class="dot">.</span>
+                            <span class="time">7 mins</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/karly-gomez-rotFzR9lX0E-unsplash.jpg" class="square" alt="" srcset="">
+                    </span>
+                    <p>Bombay Kulfi</p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">5.1</span>
+                            <span class="dot">.</span>
+                            <span class="time">30 mins</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/yash-bhardwaj-jmlVecMgNuc-unsplash.jpg" class="square" alt="" srcset="">
+                    </span>
+                    <p> One Fine Day</p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">4.6</span>
+                            <span class="dot">.</span>
+                            <span class="time">30 mins</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/shop3.jpg" class="square" alt="" srcset="">
+                    </span>
+                    <p>Kuppanna Jr</p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">7.8</span>
+                            <span class="dot">.</span>
+                            <span class="time">36 mins</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/shop4.jpg" class="square" alt="" srcset="">
+                    </span>
+                    <p>Barbie Queen</p>
+                    <div class="ratingBar">
+                        <span class="material-symbols-outlined star">star</span>
+                        <div>
+                            <span class="rating">8.7</span>
+                            <span class="dot">.</span>
+                            <span class="time">50 mins</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="orderList">
+        <div class="orderQuote">
+            <label>What's on your mind?</label>
+        </div>
+        <div class="itemList scrollHide">
+            <ul>
+                <li>
+                    <span class="listspan">
+                        <img src="images/item1.png" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Idli</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                         <img src="images/item2.png" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Dosa</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                         <img src="images/item3.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Rotti</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                         <img src="images/item4.png" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Poori</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                         <img src="images/item5.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Briyani</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                         <img src="images/item6.png" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Curd Rice</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                         <img src="images/item7.png" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Lemon</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                         <img src="images/item8.png" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Egg Rice</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                         <img src="images/item9.png" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Paani Puri</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/alo gobi.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Aloo gobi</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/pexels-muhammad-khawar-nazir-9287039.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Chana masala</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/pexels-dana-tentis-262959.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Fish curry</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/kabab.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Kebab</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/appam.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Appam</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/pexels-antony-trivet-13354485.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Upma</p>
+                </li>
+                <li>
+                    <span class="listspan">
+                        <img src="images/istockphoto-1319788114-612x612.jpg" class="rounded" alt="" srcset="">
+                    </span>
+                    <p class="itemname">Pongal</p>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="filters scrollHide">
+        <ul>
+            <li>
+                <span>Filter</span>
+                <span>+</span>
+            </li>
+            <li>
+                <span>Sort by</span>
+                <span>></span>
+            </li>
+            <li>
+                <span>Fast Delivery</span>
+            </li>
+            <li>
+                <span>Pure Veg</span>
+            </li>
+            <li>
+                <span>Ratings 4.0 +</span>
+            </li>
+            <li>
+                <span>Offers</span>
+            </li>
+            <li>
+                <span>Cuisines</span>
+                <span>></span>
+            </li>
+            <li>
+                <span>Rs. 300-Rs. 600</span>
+            </li>
+            <li>
+                <span>Less than Rs. 300</span>
+            </li>
+        </ul>
+        <br>
+    </div>
+    <!--footer-->
+    <hr>
+    <div class="cartDiv">
+        <div class="cartOrder">
+            <h4>No Items to procced</h4>
+        </div>
+        <div>
+            <button type="button">Proceed to pay</button>
+        </div>
+    </div>
+    <div class="footer">
+
+    
+ 
+   <span class="material-symbols-outlined">
+        near_me
+       <a href=""> <h6>Near me</h6></a>
+    </span>
+       
+    <br>
+    <span class="material-symbols-outlined" id="cartShow">
+        shopping_cart
+      <a href=""><h6>Cart</h6></a>  
+    </span>
+        <br>
+    <span class="material-symbols-outlined">
+            person
+        <a href="">   <h6>Profile</h6></a> 
+    </span>
+            <br>
+    <span class="material-symbols-outlined">
+                language
+              <a href="">  <h6>Language</h6></a>
+    </span>
+    </div>
+</body>
+<script src="cart.js"></script>
+<script>
+    $(".itemList ul li").click((e)=>{
+        location.href = "./foods.html";
+    })
+</script>
+</html>
